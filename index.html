@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Деньги, которые не доходят до договора</title>
+<style>
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0 auto;
+    max-width: 52rem;
+    padding: 1.6rem 1.15rem 3.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    color: #1a1916;
+    background: #f7f5f1;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+  h1 {
+    margin: 0 0 0.55rem;
+    font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+    font-size: clamp(2rem, 7vw, 3.15rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+    text-align: center;
+  }
+  .subject {
+    margin: 0;
+    color: #5c5852;
+    font-size: 1.05rem;
+    text-align: center;
+  }
+  .wave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 18px;
+    margin: 0.9rem auto 1.55rem;
+  }
+  .wave span {
+    display: block;
+    width: 3px;
+    border-radius: 2px;
+    background: #3e4c3e;
+    transform-origin: center;
+    animation: bar 0.7s ease both;
+  }
+  .wave span:nth-child(1) { height: 6px; animation-delay: 0.05s; }
+  .wave span:nth-child(2) { height: 12px; animation-delay: 0.12s; }
+  .wave span:nth-child(3) { height: 18px; animation-delay: 0.18s; }
+  .wave span:nth-child(4) { height: 11px; animation-delay: 0.24s; }
+  .wave span:nth-child(5) { height: 7px; animation-delay: 0.3s; }
+  @keyframes bar {
+    from { transform: scaleY(0.25); opacity: 0.35; }
+    to { transform: scaleY(1); opacity: 1; }
+  }
+  article {
+    padding: 1.65rem 0 1.8rem;
+    border-top: 1px solid #d9d3c8;
+  }
+  h2 {
+    margin: 0 0 1.05rem;
+    font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    text-align: center;
+  }
+  h3 {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #6b6560;
+  }
+  p { margin: 0; }
+  .ask { margin-bottom: 0.2rem; }
+  .ask p { max-width: 38rem; }
+  blockquote.quote {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+    margin: 1.35rem 0 1.2rem;
+    padding: 0;
+    border: 0;
+  }
+  .quote .words {
+    margin: 0;
+    font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+    font-style: italic;
+    font-size: clamp(1.35rem, 3.4vw, 1.85rem);
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.015em;
+    color: #24382c;
+  }
+  .tc {
+    margin: 0;
+    font-style: normal;
+    font-size: 0.75rem;
+    line-height: 1.35;
+    color: #6b6560;
+  }
+  .tc .mark {
+    display: block;
+    margin-bottom: 0.12rem;
+    font-weight: 650;
+  }
+  .pair {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+  .pair p {
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
+  .instead {
+    background: #e7efe4;
+    padding: 0.8rem 0.9rem 0.9rem;
+  }
+  .instead h3 { color: #3e4c3e; }
+  footer {
+    margin-top: 0.25rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid #1a1916;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    color: #3a3834;
+  }
+  footer p { margin: 0 0 0.35rem; }
+  footer ul {
+    margin: 0.85rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  footer a {
+    color: inherit;
+    display: inline-block;
+    padding: 0.4rem 0;
+  }
+  @media (min-width: 720px) {
+    body { padding: 3.2rem 1.75rem 4.5rem; }
+    blockquote.quote {
+      grid-template-columns: 1fr auto;
+      gap: 1.25rem;
+      align-items: end;
+    }
+    .tc {
+      max-width: 8.5rem;
+      text-align: right;
+      padding-bottom: 0.15rem;
+    }
+    .pair {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: stretch;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .wave span { animation: none; }
+  }
+</style>
+</head>
+<body>
+  <h1>Деньги, которые не доходят до договора</h1>
+  <p class="subject">Из записей разговоров с клиентами</p>
+  <div class="wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+  <article>
+    <h2>«Просто посмотреть»</h2>
+    <section class="ask">
+      <h3>Что просил клиент</h3>
+      <p>Приехать в шоу-рум и посмотреть кухни, без дизайнера. Дизайнера потом вызвать не против.</p>
+    </section>
+    <blockquote class="quote">
+      <p class="words">«А почему нельзя приехать в шоу-рум просто посмотреть на кухню? Ещё без дизайнера.»</p>
+      <p class="tc"><span class="mark">Метка времени звонка</span>06:29</p>
+    </blockquote>
+    <div class="pair">
+      <section>
+        <h3>Что ответил менеджер</h3>
+        <p>«Просто так приехать можно» — и сразу запись на завтра, на 12 или на 18. Дизайнер сам перезвонит. Слот она не берёт. Если решит приехать — напишет в чат.</p>
+      </section>
+      <section class="instead">
+        <h3>Должен был ответить менеджер</h3>
+        <p>«Шоу-рум смотрим с дизайнером. Завтра в 12 или в 18 — приедете посмотреть кухни; не получится — напишите до визита, слот снимем.»</p>
+      </section>
+    </div>
+  </article>
+
+  <article>
+    <h2>«Только модули»</h2>
+    <section class="ask">
+      <h3>Что просил клиент</h3>
+      <p>Маленькая кухня, чтобы человек подъехал и посмотрел. Дальше сузил: только модули и фасады, фурнитура и столешница уже есть.</p>
+    </section>
+    <blockquote class="quote">
+      <p class="words">«Мне нужны чисто модули и фасады. Всю фурнитуру у меня всё есть.»</p>
+      <p class="tc"><span class="mark">Метка времени звонка</span>06:16</p>
+    </blockquote>
+    <div class="pair">
+      <section>
+        <h3>Что ответил менеджер</h3>
+        <p>Цена полной кухни с фурнитурой. Без фурнитуры расчёт в систему не вводится. «Уточню у технолога и перезвоню.» Выезда нет, дня перезвона нет.</p>
+      </section>
+      <section class="instead">
+        <h3>Должен был ответить менеджер</h3>
+        <p>«По модулям без фурнитуры уточню у технолога и перезвоню завтра. Если такой заказ берём — на этом звонке ставим день дизайнера.»</p>
+      </section>
+    </div>
+  </article>
+
+  <article>
+    <h2>«Цена до визита»</h2>
+    <section class="ask">
+      <h3>Что просил клиент</h3>
+      <p>Помещение готово, угловая кухня. Какой материал взять: дети пачкают фасады и столешницу.</p>
+    </section>
+    <blockquote class="quote">
+      <p class="words">«Давайте, может быть, в понедельник созвонимся. Я уже буду понимать, когда я могу.»</p>
+      <p class="tc"><span class="mark">Метка времени звонка</span>06:43</p>
+    </blockquote>
+    <div class="pair">
+      <section>
+        <h3>Что ответил менеджер</h3>
+        <p>До визита — три ориентира по материалам. Дизайнер завтра или в ближайшие выходные. Она переносит разговор на понедельник. Созвон без дня визита.</p>
+      </section>
+      <section class="instead">
+        <h3>Должен был ответить менеджер</h3>
+        <p>«В понедельник наберу. На звонке ставим день приезда дизайнера — предложу два времени. Цену посчитаем у вас.»</p>
+      </section>
+    </div>
+  </article>
+
+  <footer>
+    <p>ИП Мишенков С.Ю., Самара</p>
+    <p>Записи звонков обезличиваю, после разбора удаляю, NDA по запросу</p>
+    <ul>
+    <li><a href="%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%9A%D1%83%D0%BA%D0%B8%20%D0%98%D0%9F%20%D0%9C%D0%B8%D1%88%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%20%D0%A1.%D0%AE.%20%D0%BC%D0%B0%D0%B8%CC%86%202025.pdf">Политика куки</a></li>
+    <li><a href="%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BF%D0%B5%D1%80%D1%81.%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%98%D0%9F%20%D0%9C%D0%B8%D1%88%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%20%D0%A1.%D0%AE.%20%D0%BC%D0%B0%D0%B8%CC%86%202025.pdf">Политика персональных данных</a></li>
+    <li><a href="%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0%20%D0%BC%D0%B0%D0%B8%CC%86%202025.pdf">Форма согласия</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
